@@ -80,7 +80,7 @@
             <input type="hidden" name="form-name" value="booking" />
 
             <label>Name<input type="text" name="name" required /></label>
-            <label>Service<select name="service selection" required>
+            <label>Service<select name="service" required>
             <option value="">Select A Service</option>
             <option value="Regular Cut (Tapers, HighTops, Drop Fades)">Regular Cut</option>
             <option value="Line Up">Line Up</option>
@@ -88,8 +88,8 @@
         </select>
             </label>
 
-            <label>Appointment Date<input type="date" id="data" required /></label>
-            <label>Appointment Time<input type="time" id=time required /> </label>
+            <label>Appointment Date<input type="date" name="appointment date" required /></label>
+            <label>Appointment Time<input type="time" name="appointment time" required /> </label>
 
             <button type="submit">Confirm Booking!</button>
         </form>
@@ -108,3 +108,4 @@
 </body>
 
 </html>
+
