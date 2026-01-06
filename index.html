@@ -105,24 +105,10 @@
     </section>
 </footer>
 
-<script src="script.js"></script>
-    <script>
-  const form = document.querySelector('.bookingForm');
-  const timeInput = form.querySelector('input[name="appointment_time"]');
-  const displayTime = form.querySelector('input[name="appointment_time_display"]');
-
-  form.addEventListener('submit', () => {
-    const [hour, minute] = timeInput.value.split(':');
-    let h = parseInt(hour);
-    const ampm = h >= 12 ? 'PM' : 'AM';
-    h = h % 12 || 12;
-
-    displayTime.value = `${h}:${minute} ${ampm} EST`;
-  });
-</script>
+<script src="script.js><script>
 </body>
-
 </html>
+
 
 
 
