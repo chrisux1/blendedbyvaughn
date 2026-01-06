@@ -79,7 +79,7 @@
         <form class="bookingForm" name="booking" method="POST"  data-netlify="true">
             <input type="hidden" name="form-name" value="booking" />
 
-            <label>Your Name<input type="text" name="name" placeholder="Your Name" required /></label>
+            <label>Name<input type="text" name="name" required /></label>
             <label>Service<select name="service selection" required>
             <option value="">Select A Service</option>
             <option value="Regular Cut (Tapers, HighTops, Drop Fades)">Regular Cut</option>
@@ -88,8 +88,8 @@
         </select>
             </label>
 
-            <label>Date<input type="date" id="data" required /></label>
-            <label>Time<input type="time" id=time required /> </label>
+            <label>Appointment Date<input type="date" id="data" required /></label>
+            <label>Appointment Time<input type="time" id=time required /> </label>
 
             <button type="submit">Confirm Booking!</button>
         </form>
@@ -106,4 +106,5 @@
 
 <script src="script.js"></script>
 </body>
+
 </html>
