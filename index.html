@@ -90,6 +90,7 @@
 
             <label>Appointment Date<input type="date" name="appointment date" required /></label>
             <label>Appointment Time<input type="time" name="appointment time" required /> </label>
+            <input type="hidden name="appointment_time_display" />
 
             <button type="submit">Confirm Booking!</button>
         </form>
@@ -108,4 +109,21 @@
 </body>
 
 </html>
+
+<script>
+  const form = document.querySelector('.bookingForm');
+  const timeInput = form.querySelector('input[name="appointment_time"]');
+  const displayTime = form.querySelector('input[name="appointment_time_display"]');
+
+  form.addEventListener('submit', () => {
+    const [hour, minute] = timeInput.value.split(':');
+    let h = parseInt(hour);
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    h = h % 12 || 12;
+
+    displayTime.value = `${h}:${minute} ${ampm} EST`;
+  });
+</script>
+
+
 
