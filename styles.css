@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;'
+}
+
+body {
+    background: #fff;
+    color: #000;
+}
+
+
+#brand h1 {
+    text-align: left;
+    font-size: 40px;
+}
+
+.navbar {
+    background: #777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.nav-icons .icon {
+    display: flex;
+    gap: 12px;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.card {
+    background: #000;
+    border: 12px solid #e5e5e5;
+    width: 300px;
+
+
+    padding: 30px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.services2 h3 {
+    font-weight: 600;
+}
+
+.disclaimer-eyebrow {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.availability {
+    margin-top: 30px;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bookingForm input, .bookForm select {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.bookingForm button {
+    background: #f4b400;
+    border: none;
+    padding: 12px;
+    font-weight: 700;
+    cursor: pointer;
+ }
+
+ .bookingForm button:hover {
+     opacity: 0.9;
+ }
+
+ form {
+     align-items: center;
+ }
+
+ form button {
+     background: #f4b400;
+ }
+
+ .card {
+     background: transparent;
+     border: 12px solid #e5e5e5;
+     width: 300px;
+     padding: 20px;
+ }
+
+ .card-outer {
+     background: #cfcfcf;
+     padding: 50px;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+
+ .card-inner {
+     background: #000;
+     padding: 50px;
+     color: #fff;
+ }
+ #services h2, h3 , strong , .services2 p  , #travel-info h2 , #booking-price\ list\/services h2 {
+     margin-bottom: 20px;
+     font-size: 25px;
+     font-weight: 1000;
+     text-align: center;
+ }
+
+#services h2 , #travel-info h2 , #availability h3 {
+     margin-bottom: 50px;
+     font-size: 40px;
+ }
+
+.services2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services2 p {
+    font-size: 15px;
+}
+
+.disclaimer-eyebrow {
+    text-align: center;
+}
+
+#travel-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#travel-info p , #availability p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+#booking-price\ list\/services h2 {
+    font-size: 30px;
+}
+#bookingForm {
+    text-align: center ;
+    font-size: 20px;
+}
+
+form {
+    align-items: center;
+    font-size: 20px;
+}
+
+ footer {
+     text-align: center;
+     margin-top: 25px;
+     font-size: 18px;
+ }
+
+@media (max-width: 768px) {
+
+
+    .navbar {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-self: center;
+    }
+
+    .nav-icons {
+        justify-self: center;
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
