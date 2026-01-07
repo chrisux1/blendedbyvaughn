@@ -29,7 +29,7 @@ body {
     flex: 1 1 100%;
     text-align: center;
     margin: 0;
-    font-size: 44px;
+    font-size: 41px;
     font-weight: 700;
     font-style: bolder;
 }
@@ -217,6 +217,7 @@ form {
     }
 
 }
+
 
 
 
