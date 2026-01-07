@@ -22,23 +22,29 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
-    position: relative;
+    flex-wrap: wrap;
 }
 
 .brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1 1 100%;
+    text-align: center;
     margin: 0;
     font-size: 28px;
     font-weight: 700;
-    text-align: center;
 }
 
 
 .nav-icons .icon {
     display: flex;
     gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+.navbar img {
+    max-width: 120px;
+    height: auto;
 }
 
 .container {
@@ -210,3 +216,4 @@ form {
     }
 
 }
+
